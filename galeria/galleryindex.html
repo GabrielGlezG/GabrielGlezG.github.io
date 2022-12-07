@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <input class="favorite styled" type="button" value="Ir a pagina principal" onClick="history.go(-1);">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Gallery" content="width=device-width, initial-scale=1">
+
+    <title>Galería fotos Cochamó</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="gallery-grid.css">
+
+
+</head>
+<body>
+
+<div class="container gallery-container">
+
+    <h1>Galería de fotos de Cochamó</h1>
+
+    <p class="page-description text-center">Enterate de las bellezas naturales del lugar</p>
+    
+    <div class="tz-gallery">
+
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="./gallery/img1.jpg">
+                    <img src="./gallery/img1.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="./gallery/img2.jpg">
+                    <img src="./gallery/img2.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <a class="lightbox" href="./gallery/img3.png">
+                    <img src="./gallery/img3.png" alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="./gallery/img4.png">
+                    <img src="./gallery/img4.png" alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="./gallery/img5.png">
+                    <img src="./gallery/img5.png" alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="./gallery/img6.png">
+                    <img src="./gallery/img6.png" alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="./gallery/img7.jpg">
+                    <img src="./gallery/img7.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="./gallery/img8.png">
+                    <img src="./gallery/img8.png" alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="./gallery/img9.jpg">
+                    <img src="./gallery/img9.jpg" alt="">
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+</body>
+</html>

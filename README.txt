@@ -1,0 +1,1 @@
+Abrir index.html y navegar por la pagina.

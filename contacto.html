@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    </style>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+        <a href="#" class="float">⏏</a>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a class="md-button" href="index.html">Inicio</a></li>
+        <li><a class="md-button" href="puntosInteres.html">Puntos de Interes</a></li>
+        <li><a class="md-button" href="noticias.html">Noticias</a></li>
+        <li>
+          <a class="md-button" href="preguntas.html">Preguntas Frecuentes</a>
+        </li>
+        <li><a class="md-button" href="contacto.html">Contacto</a></li>
+      </ul>
+      <div class="mobile-nav">
+        <img src="./img/menu-btn.png" alt="" class="menu-btn" />
+        <h1 class="close-btn">X</h1>
+      </div>
+    </nav>
+
+    <div>
+      <div class="container">
+        <h2 class="desc">Aqui encontrara la informacion de contacto necesaria para que pueda resolver dudas o consultas.<br>No dude en contactarnos, resolveremos sus dudas lo mas rapido posible.</h2>
+        <div class="box" id="a">
+          <h2>Municipalidad de Cochamó</h2>
+          <div class="line2"></div>
+          <p class="header-content">
+            <strong>Telefono</strong><br>
+            Fono Central Municipalidad: +56 (65) 2562551 <br><br>
+            <strong>Correo electronico</strong><br>
+            <a href="mailto:turismo@municochamo.cl">turismo@municochamo.cl</a>
+          </p>
+        </div>
+        <div class="box" id="b">
+          <h2>Nosotros</h2>
+          <div class="line2"></div>
+        <p class="header-content">
+          <strong>Telefono</strong><br>
+          +569 3662 9914<br><br>
+          <strong>Correo electronico</strong><br>
+          <a href="mailto:ggonzalezg@utem.cl">ggonzalezg@utem.cl</a><br>
+          <a href="mailto:lsandovalf@utem.cl">lsandovalf@utem.cl</a><br>
+          <a href="mailto:pvargasm@utem.cl">pvargasm@utem.cl</a><br>
+          <a href="mailto:jmalca@utem.cl">jmalca@utem.cl</a>
+        </p>
+        </div>
+      </div>
+    </div>
+
+    </header>
+
+    <section class="footer">
+      <p>Santiago, Chile</p>
+      <p>Copyright © 2022 Cochamó Adventure</p>
+    </section>
+
+    <script>
+      const mobileNav = document.querySelector(".mobile-nav");
+      const menuBtn = document.querySelector(".menu-btn");
+      const navlinks = document.querySelector(".nav-links");
+      const closeBtn = document.querySelector(".close-btn");
+
+      mobileNav.addEventListener("click", (e) => {
+        navlinks.classList.toggle("mobile-menu");
+        if (e.target === menuBtn) {
+          menuBtn.replaceWith(closeBtn);
+          closeBtn.style.display = "block";
+        }
+        if (e.target === closeBtn) {
+          closeBtn.replaceWith(menuBtn);
+        }
+      });
+    </script>
+  </body>
+</html>
